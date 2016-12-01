@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA","file":"all.js","sourcesContent":["$(function(){\n\n    $('.alert').delay(7000).fadeOut();\n\n});"]}
