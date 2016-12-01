@@ -166,7 +166,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Yab\Laracogs\LaracogsProvider::class,
         //
 
         /*
