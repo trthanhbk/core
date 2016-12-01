@@ -6,7 +6,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <span class="navbar-brand"><span class="fa fa-cogs"></span> Brand</span>
+        <span class="navbar-brand"><span class="fa fa-cogs"></span> PBVN</span>
         @if (Auth::user())
             <p class="navbar-text navbar-left">Signed in as {{ Auth::user()->name }}</p>
         @endif
