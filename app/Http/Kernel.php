@@ -56,5 +56,7 @@ class Kernel extends HttpKernel
         'permission' => \App\Http\Middleware\Permission::class,
         'roles' => \App\Http\Middleware\Roles::class,
         'active' => \App\Http\Middleware\Active::class,
+        'jwt.auth' => \Tymon\JWTAuth\Middleware\GetUserFromToken::class,
+         'jwt.refresh' => \Tymon\JWTAuth\Middleware\RefreshToken::class,
     ];
 }

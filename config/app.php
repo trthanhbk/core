@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Yab\Laracogs\LaracogsProvider::class,
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         //
 
         /*
