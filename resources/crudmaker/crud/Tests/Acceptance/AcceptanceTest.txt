@@ -18,7 +18,10 @@ class _camel_case_AcceptanceTest extends TestCase
         $this->_lower_case_Edited = factory(_namespace_model_\_camel_case_::class)->make([
             // _camel_case_ table data
         ]);
-        $user = factory(_app_namespace_Models\User::class)->make();
+
+        $user = factory(_app_namespace_Models\User::class)->create();
+        $user->roles()->save(factory(_app_namespace_Models\Role::class)->create());
+
         $this->actor = $this->actingAs($user);
     }
 
@@ -40,7 +43,7 @@ class _camel_case_AcceptanceTest extends TestCase
         $response = $this->actor->call('POST', '_sectionRoutePrefix__lower_casePlural_', $this->_lower_case_->toArray());
 
         $this->assertEquals(302, $response->getStatusCode());
-        $this->assertRedirectedTo('_sectionRoutePrefix__lower_casePlural_/'.$this->_lower_case_->id.'/edit');
+        $this->assertRedirectedTo('_sectionRoutePrefix__lower_casePlural_');
     }
 
     public function testEdit()
@@ -59,7 +62,7 @@ class _camel_case_AcceptanceTest extends TestCase
 
         $this->assertEquals(302, $response->getStatusCode());
         $this->seeInDatabase('_table_name_', $this->_lower_case_Edited->toArray());
-        $this->assertRedirectedTo('/');
+        $this->assertRedirectedTo('_sectionRoutePrefix__lower_casePlural_');
     }
 
     public function testDelete()
