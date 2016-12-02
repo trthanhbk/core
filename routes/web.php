@@ -53,7 +53,7 @@ Route::get('activate/token/{token}', 'Auth\ActivateController@activate');
 | Authenticated Routes
 |--------------------------------------------------------------------------
 */
-Route::group(['middleware' => ['auth', 'active']], function () {
+Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/users/switch-back', 'Admin\UserController@switchUserBack');
 

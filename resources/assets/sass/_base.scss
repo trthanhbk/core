@@ -23,8 +23,8 @@ html, body {
 */
 .alert {
     position: fixed;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    right: 0;
     margin: 24px;
     z-index: 10000;
 }
