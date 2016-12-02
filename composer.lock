@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4998323c003fe0819ad2983e930b4f61",
-    "content-hash": "2113da368634fa152bd3f2866bda23d9",
+    "hash": "c5f1165a325e443a78cc264950cf938d",
+    "content-hash": "5782ca39faa834948e5df6ffc952e612",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -2755,12 +2755,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/trthanhbk/CrudMaker.git",
-                "reference": "5869c3f55c2f611d6c1eb40e7e90021e77a97a1e"
+                "reference": "406d501c22c475946b041593a90c7690bca9a91f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trthanhbk/CrudMaker/zipball/5869c3f55c2f611d6c1eb40e7e90021e77a97a1e",
-                "reference": "5869c3f55c2f611d6c1eb40e7e90021e77a97a1e",
+                "url": "https://api.github.com/repos/trthanhbk/CrudMaker/zipball/406d501c22c475946b041593a90c7690bca9a91f",
+                "reference": "406d501c22c475946b041593a90c7690bca9a91f",
                 "shasum": ""
             },
             "require": {
@@ -2804,9 +2804,9 @@
             ],
             "description": "An incredibly powerful and some say magical CRUD maker for Laravel",
             "support": {
-                "source": "https://github.com/trthanhbk/CrudMaker/tree/v1.1.7"
+                "source": "https://github.com/trthanhbk/CrudMaker/tree/bugfix"
             },
-            "time": "2016-12-01 03:45:52"
+            "time": "2016-12-02 04:40:36"
         },
         {
             "name": "yab/crypto",
@@ -3614,16 +3614,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.6.7",
+            "version": "5.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "38810e97481723ef918f6e35c03cb1014a645bd5"
+                "reference": "00d72b8dbd2bb7d6f02a820e6db5cb70df6ac55c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/38810e97481723ef918f6e35c03cb1014a645bd5",
-                "reference": "38810e97481723ef918f6e35c03cb1014a645bd5",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/00d72b8dbd2bb7d6f02a820e6db5cb70df6ac55c",
+                "reference": "00d72b8dbd2bb7d6f02a820e6db5cb70df6ac55c",
                 "shasum": ""
             },
             "require": {
@@ -3642,7 +3642,7 @@
                 "phpunit/phpunit-mock-objects": "^3.2",
                 "sebastian/comparator": "~1.2.2",
                 "sebastian/diff": "~1.2",
-                "sebastian/environment": "^1.3 || ^2.0",
+                "sebastian/environment": "^1.3.4 || ^2.0",
                 "sebastian/exporter": "~2.0",
                 "sebastian/global-state": "~1.0",
                 "sebastian/object-enumerator": "~2.0",
@@ -3666,7 +3666,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.6.x-dev"
+                    "dev-master": "5.7.x-dev"
                 }
             },
             "autoload": {
@@ -3692,7 +3692,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-11-28 16:04:24"
+            "time": "2016-12-01 17:04:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
