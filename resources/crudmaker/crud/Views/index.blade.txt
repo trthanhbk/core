@@ -18,7 +18,7 @@
         @if($_lower_casePlural_->isEmpty())
             <div class="well text-center">No _camel_casePlural_ found.</div>
         @else
-            <table class="table">
+            <table class="table table-striped table-bordered table-hover">
                 <thead>
                     <th>Name</th>
                     <th width="50px">Action</th>
