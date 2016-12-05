@@ -36,7 +36,7 @@
                     <!-- /.col -->
                 </div>
             </form>
-            <a href="#">I forgot my password</a><br>
+            <a href="{{ url('password/reset') }}">I forgot my password</a><br>
             <a href="{{ url('/register') }}" class="text-center">Register a new membership</a>
 
         </div>

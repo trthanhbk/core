@@ -64,6 +64,7 @@
         <script src="/js/all.js"></script>
         @include('themes.adminlte.partials.errors')
         @include('themes.adminlte.partials.message')
+        @include('themes.adminlte.partials.status')
         @yield("javascript")
     </body>
 </html>

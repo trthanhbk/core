@@ -37,6 +37,16 @@
             </div>
         </div>
 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    @include('themes.default.partials.errors')
+                    @include('themes.default.partials.message')
+                    @include('themes.default.partials.status')
+                </div>
+            </div>
+        </div>
+
         <script type="text/javascript">
             var _token = '{!! Session::token() !!}';
             var _url = '{!! url("/") !!}';
