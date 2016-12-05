@@ -27,7 +27,15 @@
     </head>
     <body>
 
-        @yield('content')
+        <div class="app-wrapper container-fluid raw-margin-top-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        @yield('content')
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script type="text/javascript">
             var _token = '{!! Session::token() !!}';
