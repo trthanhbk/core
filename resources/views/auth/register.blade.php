@@ -1,38 +1,52 @@
-@extends('layouts.master')
+@extends('themes.' . env('THEME', THEME_DEFAULT) . '.layouts.authen')
 
-@section('app-content')
+@section('content')
 
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4">
+    <div class="register-box">
+        <div class="register-logo">
+            <a href="{{ url('/') }}"><b>Register</b> Form</a>
+        </div>
 
-            <h1 class="text-center">Register</h1>
+        <div class="register-box-body">
+            <p class="login-box-msg">Register a new membership</p>
 
-            <form method="POST" action="/register">
-                {!! csrf_field() !!}
-
-                <div class="col-md-12 raw-margin-top-24">
-                    <label>Name</label>
-                    <input class="form-control" type="text" name="name" value="{{ old('name') }}">
+            <form action="{{ url('/register') }}" method="post">
+                {{ csrf_field() }}
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Full name" name="name" value="{{ old('name') }}">
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
-                <div class="col-md-12 raw-margin-top-24">
-                    <label>Email</label>
-                    <input class="form-control" type="email" name="email" value="{{ old('email') }}">
+                <div class="form-group has-feedback">
+                    <input type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}">
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 </div>
-                <div class="col-md-12 raw-margin-top-24">
-                    <label>Password</label>
-                    <input class="form-control" type="password" name="password">
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
-                <div class="col-md-12 raw-margin-top-24">
-                    <label>Confirm Password</label>
-                    <input class="form-control" type="password" name="password_confirmation">
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" placeholder="Retype password" name="password_confirmation">
+                    <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
                 </div>
-                <div class="col-md-12 raw-margin-top-24">
-                    <a class="btn btn-default pull-left" href="/login">Login</a>
-                    <button class="btn btn-primary pull-right" type="submit">Register</button>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="agree"> I agree to the <a href="#">terms</a>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-4">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+                    </div>
+                    <!-- /.col -->
                 </div>
             </form>
 
+            <a href="{{ url('/login') }}" class="text-center">I already have a membership</a>
         </div>
+        <!-- /.form-box -->
     </div>
 
 @stop
