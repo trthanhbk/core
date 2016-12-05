@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c5f1165a325e443a78cc264950cf938d",
+    "hash": "97c74f041f2ee1e887ea1ac46570dd2e",
     "content-hash": "5782ca39faa834948e5df6ffc952e612",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ClassPreloader/ClassPreloader.git",
-                "reference": "9b10b913c2bdf90c3d2e0d726b454fb7f77c552a"
+                "reference": "bc7206aa892b5a33f4680421b69b191efd32b096"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ClassPreloader/ClassPreloader/zipball/9b10b913c2bdf90c3d2e0d726b454fb7f77c552a",
-                "reference": "9b10b913c2bdf90c3d2e0d726b454fb7f77c552a",
+                "url": "https://api.github.com/repos/ClassPreloader/ClassPreloader/zipball/bc7206aa892b5a33f4680421b69b191efd32b096",
+                "reference": "bc7206aa892b5a33f4680421b69b191efd32b096",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^1.0|^2.0",
+                "nikic/php-parser": "^1.0|^2.0|^3.0",
                 "php": ">=5.5.9"
             },
             "require-dev": {
@@ -31,7 +31,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -59,7 +59,7 @@
                 "class",
                 "preload"
             ],
-            "time": "2015-11-09 22:51:51"
+            "time": "2016-09-16 12:50:15"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2755,12 +2755,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/trthanhbk/CrudMaker.git",
-                "reference": "52a718355be218819866da2e15ef1b7777e1b50b"
+                "reference": "96523069daa843db00a684285646df84095f0432"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trthanhbk/CrudMaker/zipball/52a718355be218819866da2e15ef1b7777e1b50b",
-                "reference": "52a718355be218819866da2e15ef1b7777e1b50b",
+                "url": "https://api.github.com/repos/trthanhbk/CrudMaker/zipball/96523069daa843db00a684285646df84095f0432",
+                "reference": "96523069daa843db00a684285646df84095f0432",
                 "shasum": ""
             },
             "require": {
@@ -2806,7 +2806,7 @@
             "support": {
                 "source": "https://github.com/trthanhbk/CrudMaker/tree/bugfix"
             },
-            "time": "2016-12-02 08:43:04"
+            "time": "2016-12-05 07:33:40"
         },
         {
             "name": "yab/crypto",
@@ -3614,16 +3614,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.7.0",
+            "version": "5.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "00d72b8dbd2bb7d6f02a820e6db5cb70df6ac55c"
+                "reference": "336aff0ac52e306c98e7455bc3e8d7b0bf777a5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/00d72b8dbd2bb7d6f02a820e6db5cb70df6ac55c",
-                "reference": "00d72b8dbd2bb7d6f02a820e6db5cb70df6ac55c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/336aff0ac52e306c98e7455bc3e8d7b0bf777a5e",
+                "reference": "336aff0ac52e306c98e7455bc3e8d7b0bf777a5e",
                 "shasum": ""
             },
             "require": {
@@ -3692,7 +3692,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-12-01 17:04:00"
+            "time": "2016-12-03 08:33:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

@@ -33,6 +33,10 @@
         "classmap": [
             "database"
         ],
+        "files": [
+            "helpers/constants.php",
+            "helpers/functions.php"
+        ],
         "psr-4": {
             "App\\": "app/"
         }

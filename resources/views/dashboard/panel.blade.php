@@ -1,4 +1,4 @@
-<ul class="nav nav-sidebar">
+<ul class="{{ sidebar_root_ul() }}">
     <li @if(Request::is('dashboard', 'dashboard/*')) class="active" @endif>
         <a href="{!! url('dashboard') !!}"><span class="fa fa-dashboard"></span> Dashboard</a>
     </li>
@@ -9,7 +9,7 @@
         <a href="{!! url('teams') !!}"><span class="fa fa-users"></span> Teams</a>
     </li>
     @if (Gate::allows('admin'))
-        <li class="sidebar-header"><span>Admin</span></li>
+        <li class="{{ sidebar_li_header() }}"><span>Admin</span></li>
         <li @if(Request::is('admin/users', 'admin/users/*')) class="active" @endif>
             <a href="{!! url('admin/users') !!}"><span class="fa fa-users"></span> Users</a>
         </li>

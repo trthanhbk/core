@@ -1,4 +1,4 @@
-@extends('dashboard')
+@extends('themes.' . env('THEME', 'default') . '.dashboard' )
 
 @section('content')
 

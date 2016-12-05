@@ -27,7 +27,7 @@
     </head>
     <body>
 
-        @include("layouts.navigation")
+        @include("themes.default.layouts.navigation")
 
         <div class="app-wrapper container-fluid raw-margin-top-50">
             @yield("app-content")
@@ -36,8 +36,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    @include('partials.errors')
-                    @include('partials.message')
+                    @include('themes.default.partials.errors')
+                    @include('themes.default.partials.message')
                 </div>
             </div>
         </div>

@@ -9,8 +9,8 @@
 
             <form method="POST" action="/password/email">
                 {!! csrf_field() !!}
-                @include('partials.errors')
-                @include('partials.status')
+                @include('themes.default.partials.errors')
+                @include('themes.default.partials.status')
                 <div class="col-md-12 pull-left">
                     <label>Email</label>
                     <input class="form-control" type="email" name="email" placeholder="Email Address" value="{{ old('email') }}">
