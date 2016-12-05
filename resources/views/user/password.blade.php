@@ -12,19 +12,22 @@
             <form method="POST" action="/user/password">
                 {!! csrf_field() !!}
 
-                <div class="raw-margin-top-24">
+                <div class="raw-margin-top-24 {{ get_field_error_class('old_password', $errors) }}">
                     @input_maker_label('Old Password')
                     @input_maker_create('old_password', ['type' => 'password', 'placeholder' => 'Old Password'])
+                    {!! get_field_error_detail('old_password', $errors) !!}
                 </div>
 
-                <div class="raw-margin-top-24">
+                <div class="raw-margin-top-24 {{ get_field_error_class('new_password', $errors) }}">
                     @input_maker_label('New Password')
                     @input_maker_create('new_password', ['type' => 'password', 'placeholder' => 'New Password'])
+                    {!! get_field_error_detail('new_password', $errors) !!}
                 </div>
 
-                <div class="raw-margin-top-24">
+                <div class="raw-margin-top-24 {{ get_field_error_class('new_password_confirmation', $errors) }}">
                     @input_maker_label('Confirm Password')
                     @input_maker_create('new_password_confirmation', ['type' => 'password', 'placeholder' => 'Confirm Password'])
+                    {!! get_field_error_detail('new_password_confirmation', $errors) !!}
                 </div>
 
                 <div class="raw-margin-top-24">
