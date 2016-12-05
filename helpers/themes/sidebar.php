@@ -5,7 +5,7 @@ function sidebar_root_ul() {
         THEME_DEFAULT => "nav nav-sidebar",
         THEME_ADMINLTE => "sidebar-menu",
     ];
-    return $root_ul_class[env("THEME")];
+    return $root_ul_class[env("THEME", THEME_DEFAULT)];
 }
 
 function sidebar_li_header() {
@@ -13,5 +13,5 @@ function sidebar_li_header() {
         THEME_DEFAULT => "sidebar-header",
         THEME_ADMINLTE => "header",
     ];
-    return $li_header_class[env("THEME")];
+    return $li_header_class[env("THEME", THEME_DEFAULT)];
 }
