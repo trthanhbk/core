@@ -1,40 +1,47 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img width="150"src="https://laravel.com/laravel.png"></a></p>
+## Package
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+- tymon/jwt-auth
+- trthanhbk/Laracogs
+- thephpleague/fractal
 
-## About Laravel
+## Introduction
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+This is starter kit to include some functions out of the box:  
+- Admin dashboard with AdminLTE theme  
+- User / Roles / Permission  
+- Team CRUD
+- Login / Register / Forgot password ...
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Stater Steps
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+- `composer create-project laraviet/laravel-starter {project-name} --prefer-dist`
+- Create new db and update .env file
+- `php artisan migrate`
+- `php artisan db:seed`
+- `npm install`
+- `gulp`
 
-## Learning Laravel
+## CRUD
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+- `php artisan crudmaker:new Tag --api --ui=bootstrap --migration --schema="id:increments,name:string" `
+- Edit `routes/web.php` -> Default is bottom position -> Move block of routing for new resource for applying middleware if needed
+- Edit `app/Models/Tag.php` —> add validation rule
+- Edit `resources/views/dashboard/panel.blade.php` —> add tag to side menu
+- `php artisan migrate`
+- Test script will be made at `tests` folder, make sure to pass all test scripts to verify the functions
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+## Theme
 
-## Contributing
+- Support **AdminLTE** theme out of the box
+- Edit .env file to apply theme
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## To do
 
-## Security Vulnerabilities
+[ ] Try relationship  
+[x] Fix test case generated  
+[ ] Add fractal  
+[x] Add adminlte theme
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+## Reference
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+- Folk from <https://laracogs.com/>
