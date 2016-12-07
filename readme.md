@@ -20,12 +20,14 @@ This is starter kit to include some functions out of the box:
 - `php artisan db:seed`
 - `npm install`
 - `gulp`
+- default admin login: `admin@admin.com / admin`
 
 ## CRUD
 
 - `php artisan crudmaker:new Tag --api --ui=bootstrap --migration --schema="id:increments,name:string" `
 - Edit `routes/web.php` -> Default is bottom position -> Move block of routing for new resource for applying middleware if needed
 - Edit `app/Models/Tag.php` —> add validation rule
+- Edit `app/Transfomers/TagTransformer.php` —> update transformer layer for API
 - Edit `resources/views/dashboard/panel.blade.php` —> add tag to side menu
 - `php artisan migrate`
 - Test script will be made at `tests` folder, make sure to pass all test scripts to verify the functions
