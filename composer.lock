@@ -2794,12 +2794,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/trthanhbk/CrudMaker.git",
-                "reference": "386252dae847541d918eb06492bde03115f6aa7c"
+                "reference": "45f6b41003bad748ae45a73f7c9b988fdf256429"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trthanhbk/CrudMaker/zipball/386252dae847541d918eb06492bde03115f6aa7c",
-                "reference": "386252dae847541d918eb06492bde03115f6aa7c",
+                "url": "https://api.github.com/repos/trthanhbk/CrudMaker/zipball/45f6b41003bad748ae45a73f7c9b988fdf256429",
+                "reference": "45f6b41003bad748ae45a73f7c9b988fdf256429",
                 "shasum": ""
             },
             "require": {
@@ -2846,7 +2846,7 @@
             "support": {
                 "source": "https://github.com/trthanhbk/CrudMaker/tree/bugfix"
             },
-            "time": "2016-12-07 06:58:25"
+            "time": "2016-12-07 07:31:46"
         },
         {
             "name": "yab/crypto",

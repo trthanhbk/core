@@ -21,7 +21,7 @@
             @else
                 <div class="box">
                     <div class="box-body">
-                        <table class="table table-striped">
+                        <table class="table table-striped table-bordered table-hover">
                             <thead>
                                 <th>Name</th>
                                 <th class="text-right" width="200px">Action</th>
