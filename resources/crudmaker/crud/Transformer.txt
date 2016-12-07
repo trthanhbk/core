@@ -11,7 +11,7 @@ class _camel_case_Transformer extends TransformerAbstract
     {
         return [
             "id" => (int)$_lower_case_->id,
-
+            // Add other fields transformer here
             "created_at" => $_lower_case_->created_at->format(config('crudmaker.date_format')),
             "updated_at" => $_lower_case_->updated_at->format(config('crudmaker.date_format')),
         ];
