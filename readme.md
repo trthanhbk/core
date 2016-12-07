@@ -41,7 +41,7 @@ This is starter kit to include some functions out of the box:
 
 [ ] Try relationship  
 [x] Fix test case generated  
-[ ] Add fractal  
+[x] Add fractal  
 [x] Add adminlte theme
 
 ## Reference
