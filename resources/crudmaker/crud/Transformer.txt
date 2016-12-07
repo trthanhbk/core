@@ -1,0 +1,19 @@
+<?php
+
+namespace _namespace_transformers_;
+
+use _namespace_model_\_camel_case_;
+use League\Fractal\TransformerAbstract;
+
+class _camel_case_Transformer extends TransformerAbstract
+{
+    public function transform(_camel_case_ $_lower_case_)
+    {
+        return [
+            "id" => (int)$_lower_case_->id,
+
+            "created_at" => $_lower_case_->created_at->format(config('crudmaker.date_format')),
+            "updated_at" => $_lower_case_->updated_at->format(config('crudmaker.date_format')),
+        ];
+    }
+}

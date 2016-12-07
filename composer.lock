@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "97c74f041f2ee1e887ea1ac46570dd2e",
-    "content-hash": "5782ca39faa834948e5df6ffc952e612",
+    "hash": "9a826c22efe966f4c0c200bb0c9f780e",
+    "content-hash": "5f739a953a932edb507bd47d7a9b17d3",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1764,6 +1764,45 @@
             "time": "2016-11-22 19:21:44"
         },
         {
+            "name": "sorskod/larasponse",
+            "version": "dev-L5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/salebab/larasponse.git",
+                "reference": "567acabdeaeccb26fec4402b3bcf9362cb334e6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/salebab/larasponse/zipball/567acabdeaeccb26fec4402b3bcf9362cb334e6a",
+                "reference": "567acabdeaeccb26fec4402b3bcf9362cb334e6a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.0",
+                "illuminate/pagination": "~5.0",
+                "illuminate/support": "~5.0",
+                "league/fractal": "~0.11",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sorskod\\Larasponse": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Aleksandar Babic",
+                    "email": "salebab@gmail.com"
+                }
+            ],
+            "time": "2015-07-06 15:02:20"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.4",
             "source": {
@@ -2755,18 +2794,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/trthanhbk/CrudMaker.git",
-                "reference": "96523069daa843db00a684285646df84095f0432"
+                "reference": "49654271bae5ebdd0d145ea40ab1f420a60e12aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trthanhbk/CrudMaker/zipball/96523069daa843db00a684285646df84095f0432",
-                "reference": "96523069daa843db00a684285646df84095f0432",
+                "url": "https://api.github.com/repos/trthanhbk/CrudMaker/zipball/49654271bae5ebdd0d145ea40ab1f420a60e12aa",
+                "reference": "49654271bae5ebdd0d145ea40ab1f420a60e12aa",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "^2.5",
                 "illuminate/support": "^5.3",
                 "php": ">=5.6.4",
+                "sorskod/larasponse": "dev-L5",
                 "yab/formmaker": "^1.0"
             },
             "require-dev": {
@@ -2806,7 +2846,7 @@
             "support": {
                 "source": "https://github.com/trthanhbk/CrudMaker/tree/bugfix"
             },
-            "time": "2016-12-05 07:33:40"
+            "time": "2016-12-07 03:38:44"
         },
         {
             "name": "yab/crypto",
@@ -4482,12 +4522,12 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "yab/crudmaker": 20,
         "yab/laracogs": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.6.4"

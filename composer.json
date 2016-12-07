@@ -4,6 +4,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "minimum-stability": "dev",
     "repositories": [
         {
             "type": "vcs",
@@ -19,8 +20,7 @@
         "laravel/framework": "5.3.*",
         "yab/crudmaker": "dev-bugfix",
         "yab/laracogs": "dev-bugfix",
-        "tymon/jwt-auth": "^0.5.9",
-        "league/fractal": "^0.14.0"
+        "tymon/jwt-auth": "^0.5.9"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

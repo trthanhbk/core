@@ -12,6 +12,8 @@
 return [
 
     'template_source'            => app()->basePath().'/resources/crudmaker/crud',
+    'date_format' => 'm-d-Y',
+    'serializer' => 'League\Fractal\Serializer\DataArraySerializer',
 
     /*
     |--------------------------------------------------------------------------
@@ -24,6 +26,7 @@ return [
     'single' => [
         '_path_facade_'              => app()->path().'/Facades',
         '_path_service_'             => app()->path().'/Services',
+        '_path_transformer_'         => app()->path().'/Transformers',
         '_path_model_'               => app()->path().'/Models',
         '_path_controller_'          => app()->path().'/Http/Controllers/',
         '_path_api_controller_'      => app()->path().'/Http/Controllers/Api',
@@ -36,6 +39,7 @@ return [
         'routes_suffix'              => '',
         '_app_namespace_'            => app_namespace(),
         '_namespace_services_'       => app_namespace().'Services',
+        '_namespace_transformers_'   => app_namespace().'Transformers',
         '_namespace_facade_'         => app_namespace().'Facades',
         '_namespace_model_'          => app_namespace().'Models',
         '_namespace_controller_'     => app_namespace().'Http\Controllers',
